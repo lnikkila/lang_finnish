@@ -3,7 +3,7 @@
 	<name>Language: Finnish</name>
 	<description>Finnish translation for Symphony</description>
 	<repo type="github">https://github.com/lnikkila/lang_finnish</repo>
-	<url type="discuss"></url>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/82523/</url>
 	<types>
 		<type>Translations</type>
 	</types>
