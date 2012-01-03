@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="lang_finnish" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Language: Finnish</name>
+	<description>Finnish translation for Symphony</description>
+	<repo type="github">https://github.com/lnikkila/lang_finnish</repo>
+	<url type="discuss"></url>
+	<types>
+		<type>Translations</type>
+	</types>
+	<authors>
+		<author>
+			<name github="lnikkila" twitter="Cyanimint" symphony="Cyanimint">Leo Nikkilä</name>
+			<email>leo.nikkila@gmail.com</email>
+			<website></website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0.0 RC" date="2012-01-03" min="2.2.5" />
+	</releases>
+</extension>
