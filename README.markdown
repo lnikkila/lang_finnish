@@ -1,7 +1,7 @@
 # Language: Finnish
 
-Finnish translation of [Symphony](http://www.symphony-cms.com).  
-Suomenkielinen käännös [Symphony](http://www.symphony-cms.com):lle.
+Finnish translation for [Symphony CMS](http://www.symphony-cms.com).  
+Suomenkielinen käännös [Symphony CMS](http://www.symphony-cms.com):lle.
 
 ## A note about transliterations
 
