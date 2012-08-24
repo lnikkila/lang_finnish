@@ -9,12 +9,13 @@
 	</types>
 	<authors>
 		<author>
-			<name github="lnikkila" twitter="Cyanimint" symphony="Cyanimint">Leo Nikkilä</name>
+			<name github="lnikkila" twitter="lnikkila" symphony="Cyanimint">Leo Nikkilä</name>
 			<email>leo.nikkila@gmail.com</email>
 			<website></website>
 		</author>
 	</authors>
 	<releases>
+		<release version="1.1.0 RC" date="2012-08-24" min="2.3.0" />
 		<release version="1.0.0 RC" date="2012-01-03" min="2.2.5" />
 	</releases>
 </extension>

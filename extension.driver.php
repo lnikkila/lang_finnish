@@ -2,20 +2,6 @@
 
 	Class extension_lang_finnish extends Extension {
 
-		public function about() {
-			return array(
-				'name' => 'Language: Finnish',
-				'version' => '1.0.0 RC',
-				'type' => 'Translations',
-				'release-date' => '2012-01-03',
-				'author' => array(
-					'name' => 'Leo Nikkilä',
-					'email' => 'leo.nikkila@gmail.com'
-				),
-				'description' => 'Finnish translation for Symphony'
-			);
-		}
-
 		public function getSubscribedDelegates(){
 			return array(
 				array(
