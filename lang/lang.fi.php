@@ -7,7 +7,7 @@
 			'email' => 'leo.nikkila@gmail.com',
 			'website' => ''
 		),
-		'release-date' => '2013-06-21'
+		'release-date' => '2013-07-24'
 	);
 
 	/**
@@ -58,7 +58,7 @@
 		'%s Piilota tämä malli hallintapaneelin valikosta',
 
 		'%s Include a count of entries in associated sections' =>
-		'%s Näytä merkintöjen lukumäärä assosioiduissa malleissa',
+		'%s Näytä merkintöjen lukumäärä linkitetyissä malleissa',
 
 		'%s Make this a required field' =>
 		'%s Tee tästä pakollinen kenttä',
@@ -484,7 +484,7 @@
 		'Poista sivulta',
 
 		'Developer' =>
-		'Kehittäjä',
+		'Järjestelmävalvoja',
 
 		'Disable' =>
 		'Poista käytöstä',
@@ -1858,7 +1858,28 @@
 		'‘%s’ on pakollinen kenttä.',
 
 		'at' =>
-		false
+		'klo',
+
+		'Linked to %s in' =>
+		'Linkitetty kohteessa %s merkintöihin',
+
+		'Links in %s' =>
+		'Linkit kohteessa %s',
+
+		'%d entries' =>
+		'%d merkintää',
+
+		'Show more entries' =>
+		'Näytä lisää merkintöjä',
+
+		'No links in %s' =>
+		'Ei linkkejä kohteessa %s',
+
+		'Show Associations' =>
+		'Näytä linkitetyt merkinnät',
+
+		'Manager' =>
+		'Hallinnoitsija'
 
 	);
 
