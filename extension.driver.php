@@ -39,7 +39,7 @@
 			Symphony::Configuration()->set('date_format', $date, 'lang-Finnish-storage');
 			Symphony::Configuration()->set('time_format', $time, 'lang-Finnish-storage');
 			Symphony::Configuration()->set('datetime_separator', $separator, 'lang-Finnish-storage');
-			Administration::instance()->saveConfig();
+			Symphony::Configuration()->write();
 		}
 
 		public function enable(){
@@ -57,7 +57,7 @@
 
 			// Remove storage
 			Symphony::Configuration()->remove('lang-Finnish-storage');
-			Administration::instance()->saveConfig();
+			Symphony::Configuration()->write();
 		}
 
 		/**
@@ -68,8 +68,8 @@
 			// Set Finnish date and time settings
 			Symphony::Configuration()->set('date_format', 'd. F Y', 'region');
 			Symphony::Configuration()->set('time_format', 'H:i', 'region');
-			Symphony::Configuration()->set('datetime_separator', ', ', 'region');			
-			Administration::instance()->saveConfig();
+			Symphony::Configuration()->set('datetime_separator', ', ', 'region');     
+			Symphony::Configuration()->write();
 		}
 
 		/**
@@ -80,13 +80,13 @@
 			// Fetch current date and time settings
 			$date = Symphony::Configuration()->get('date_format', 'lang-Finnish-storage');
 			$time = Symphony::Configuration()->get('time_format', 'lang-Finnish-storage');
-			$separator = Symphony::Configuration()->get('datetime_separator', 'lang-Finnish-storage');	
+			$separator = Symphony::Configuration()->get('datetime_separator', 'lang-Finnish-storage');  
 
 			// Store new date and time settings
 			Symphony::Configuration()->set('date_format', $date, 'region');
 			Symphony::Configuration()->set('time_format', $time, 'region');
 			Symphony::Configuration()->set('datetime_separator', $separator, 'region');
-			Administration::instance()->saveConfig();
+			Symphony::Configuration()->write();
 		}
 
 	}
