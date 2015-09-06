@@ -4,10 +4,10 @@
 		'name' => 'Finnish',
 		'author' => array(
 			'name' => 'Leo Nikkilä',
-			'email' => 'leo.nikkila@gmail.com',
-			'website' => ''
+			'email' => 'hello@lnikki.la',
+			'website' => 'https://lnikki.la'
 		),
-		'release-date' => '2013-07-24'
+		'release-date' => '2015-09-06'
 	);
 
 	/**
@@ -18,71 +18,47 @@
 		'$param' =>
 		'$param',
 
+		'$param:default' =>
+		'$param:oletusarvo',
+
 		'%1$s &ndash; %2$s' =>
 		'%1$s &ndash; %2$s',
 
 		'%1$s &ndash; %2$s &ndash; %3$s' =>
 		'%1$s &ndash; %2$s &ndash; %3$s',
 
-		'%1$s Paginate results, limiting to %2$s entries per page. Return page %3$s' =>
-		'%1$s Sivuta tulokset näyttäen %2$s tulosta per sivu. Palauta sivu %3$s',
-
 		'%1$s is not a supported encoding type. Please use %2$s or %3$s. You can also use %4$s for no encoding.' =>
-		'%1$s ei ole tuettu koodaustyyppi. Käytä tyyppejä %2$s tai %3$s. Voit myös käyttää %4$s-merkintää koodauksen estämiseksi.',
+		'%1$s ei ole tuettu koodaus. Käytä koodauksia %2$s tai %3$s. Voit myös käyttää %4$s-merkintää koodauksen estämiseksi.',
 
 		'%1$s released on %2$s' =>
 		'%1$s julkaistu %2$s',
 
+		'%d entries' =>
+		'%d merkintää',
+
+		'%d of %d entries (filtered)' =>
+		'%d/%d merkinnästä (hakuehtoja asetettu)',
+
+		'%s ' =>
+		'%s ',
+
 		'%s Allow remote login via' =>
 		'%s Salli etäkirjautuminen osoitteesta',
 
-		'%s Allow selection of multiple authors' =>
-		'%s Salli monen käyttäjän valinta',
-
-		'%s Allow selection of multiple options' =>
-		'%s Salli monen vaihtoehdon valinta',
-
 		'%s Checked by default' =>
-		'%s Rastitettu oletuksena',
-
-		'%s Display in entries table' =>
-		'%s Näytä merkintäluettelossa',
-
-		'%s Display relationship in entries table %s' =>
-		'%s Näytä yhteys merkintätaulukossa %s',
-
-		'%s HTML-encode text' =>
-		'%s HTML-koodaa teksti',
-
-		'%s Hide this section from the back-end menu' =>
-		'%s Piilota tämä malli hallintapaneelin valikosta',
-
-		'%s Include a count of entries in associated sections' =>
-		'%s Näytä merkintöjen lukumäärä linkitetyissä malleissa',
-
-		'%s Make this a required field' =>
-		'%s Tee tästä pakollinen kenttä',
-
-		'%s Pre-populate with current date' =>
-		'%s Täytä valmiiksi nykyisellä päivämäärällä',
-
-		'%s Redirect to 404 page when no results are found' =>
-		'%s Uudelleenohjaa 404-sivulle, jos tuloksia ei löydy',
+		'%s Valittu oletuksena',
 
 		'%s Requires authentication' =>
 		'%s Vaatii sisäänkirjautumisen',
 
-		'%s Select current user by default' =>
-		'%s Valitse oletuksena nykyinen käyttäjä',
-
-		'%s Sort all options alphabetically' =>
-		'%s Järjestä kaikki vaihtoehdot aakkosjärjestyksessä',
-
 		'%s accepts strings only; arrays are not allowed.' =>
-		'%s hyväksyy vain merkkijonoja; jonoja ei sallita.',
+		'%s hyväksyy vain merkkijonoja; taulukkoja ei sallita.',
 
 		'%s has timed out' =>
 		'%s aikakatkaistiin.',
+
+		'%s is a reserved name used by the system and is not allowed for a field handle. Try using %s instead.' =>
+		'%s on järjestelmän käyttämä varattu nimi. Kokeile nimeä %s sen sijaan.',
 
 		'&larr; Previous' =>
 		'&larr; Edellinen',
@@ -99,38 +75,41 @@
 		'A Data source with the name %s already exists' =>
 		'Tietolähde nimeltä %s on jo olemassa',
 
-		'A Section with the name %s already exists' =>
-		'Malli nimeltä %s on jo olemassa',
-
-		'A Utility with that name already exists. Please choose another.' =>
-		'Työkalu tällä nimellä on jo olemassa. Valitse toinen nimi.',
+		'A Section with the handle %s already exists' =>
+		'Malli tunnuksella %s on jo olemassa',
 
 		'A database error occurred while attempting to reorder.' =>
-		'Tietokantavirhe tapahtui uudelleenjärjestäessä.',
+		'Uudelleenjärjestettäessä tapahtui tietokantavirhe.',
 
 		'A field with that element name already exists. Please choose another.' =>
-		'Kenttä tällä nimellä on jo olemassa. Valitse toinen nimi.',
+		'Samanniminen kenttä on jo olemassa. Valitse toinen nimi.',
 
 		'A field with this handle already exists. All handle must be unique.' =>
-		'Kenttä tällä kahvalla on jo olemassa. Kaikkien kahvojen on oltava yksilöllisiä.',
+		'Kenttä tällä tunnuksella on jo olemassa. Kaikkien tunnusten on oltava yksilöllisiä.',
+
+		'A message must be supplied unless the alert is of type Alert::ERROR' =>
+		'Viesti on annettava, ellei huomautuksen tyyppi ole Alert::ERROR',
 
 		'A new password has been requested for your account. Login using the following link, and change your password via the Authors area:' =>
-		'Käyttäjätunnuksellesi on pyydetty uusi salasana. Kirjaudu sisään käyttäen seuraavaa linkkiä, ja vaihda salasanasi Käyttäjät-sivun kautta:',
+		'Sinulle on pyydetty uusi salasana. Kirjaudu sisään käyttäen seuraavaa linkkiä, ja vaihda salasanasi Käyttäjät-sivun kautta:',
 
 		'A page number must be set' =>
 		'Sivunumero on annettava',
 
 		'A page with that handle already exists' =>
-		'Sivu kyseisellä kahvalla on jo olemassa.',
+		'Sivu kyseisellä tunnuksella on jo olemassa.',
 
 		'A page with that title already exists' =>
 		'Sivu kyseisellä otsikolla on jo olemassa.',
 
 		'A result limit must be set' =>
-		'Tulosrajoitus on annettava',
+		'Maksimimäärä on annettava',
 
 		'Access Denied' =>
 		'Pääsy estetty',
+
+		'Actions' =>
+		'Toiminnot',
 
 		'Add field' =>
 		'Lisää kenttä',
@@ -139,16 +118,13 @@
 		'Lisää kenttiä',
 
 		'Add filter' =>
-		'Lisää suodatin',
+		'Lisää hakuehto',
 
 		'Add item' =>
 		'Lisää uusi',
 
-		'Add namespace' =>
-		'Lisää nimiavaruus',
-
 		'Admin Only' =>
-		'Vain järjestelmävalvoja',
+		'Vain Symphonyyn kirjautuneet',
 
 		'All' =>
 		'Kaikki',
@@ -159,14 +135,20 @@
 		'Allow Multiple' =>
 		'Salli monta',
 
+		'Allow filtering of section entries' =>
+		'Salli merkintöjen perusteella järjestäminen',
+
+		'Allow selection of multiple authors' =>
+		'Salli useamman käyttäjän valitseminen',
+
+		'Allow selection of multiple options' =>
+		'Salli useamman valinnan valitseminen',
+
 		'An Event with the name %s already exists' =>
 		'Tapahtuma nimeltä %s on jo olemassa',
 
 		'An email containing a customised login link has been sent to %s. It will expire in 2 hours.' =>
 		'Sisäänkirjautumislinkki lähetettiin osoitteeseen %s. Linkki vanhenee 2 tunnin kuluttua.',
-
-		'An empty result will be returned when this parameter does not have a value.' =>
-		'Tyhjä tulos palautetaan, jos tätä parametria ei ole määritelty.',
 
 		'An error occurred while processing this form. See below for details.' =>
 		'Lomaketta käsiteltäessä tapahtui virhe. Katso yksityiskohdat alta.',
@@ -192,6 +174,9 @@
 		'Apply' =>
 		'OK',
 
+		'Apply filters' =>
+		'Aseta hakuehdot',
+
 		'Apr' =>
 		'huhti',
 
@@ -199,10 +184,7 @@
 		'huhtikuuta',
 
 		'Are you sure you want to delete all entries in the selected sections?' =>
-		'Haluatko varmasti poistaa kaikki valituista malleista johdetut merkinnät?',
-
-		'Are you sure you want to delete the selected authors?' =>
-		'Haluatko varmasti poistaa valitut käyttäjät?',
+		'Haluatko varmasti poistaa kaikki valittujen mallien merkinnät?',
 
 		'Are you sure you want to delete the selected entries?' =>
 		'Haluatko varmasti poistaa valitut merkinnät?',
@@ -212,9 +194,6 @@
 
 		'Are you sure you want to delete the selected sections?' =>
 		'Haluatko varmasti poistaa valitut mallit?',
-
-		'Are you sure you want to delete this Utility?' =>
-		'Haluatko varmasti poistaa tämän työkalun?',
 
 		'Are you sure you want to delete this author?' =>
 		'Haluatko varmasti poistaa tämän käyttäjän?',
@@ -241,13 +220,22 @@
 		'Haluatko varmasti poistaa valitut lisäosat?',
 
 		'Argument `$%1$s` is not of type `%2$s`, given `%3$s`.' =>
-		'Argumentti `$%1$s` ei ole tyyppiä `%2$s`, `%3$s` annettiin.',
+		'Argumentin `$%1$s` on oltava tyyppiä `%2$s` eikä tyyppiä `%3$s`.',
+
+		'Association Editor' =>
+		'Linkin muokkain',
+
+		'Association Interface' =>
+		'Linkin käyttöliittymä',
 
 		'At least one source must be specified, dynamic or static.' =>
 		'Ainakin yksi dynaaminen tai staattinen lähde on määriteltävä.',
 
 		'Attach to Page' =>
 		'Liitä sivuun',
+
+		'Attach to Pages' =>
+		'Liitä sivuihin',
 
 		'Aug' =>
 		'elo',
@@ -285,17 +273,14 @@
 		'Blueprints' =>
 		'Rakenteet',
 
-		'Body' =>
-		'Sisältö',
-
-		'Body is a required field.' =>
-		'Sisältö on pakollinen kenttä',
+		'Can not add the element itself as one of its child' =>
+		'Elementti ei voi olla hierarkiassa itsensä alla',
 
 		'Can not call AUTH again.' =>
 		'AUTH-komentoa ei voida kutsua uudelleen.',
 
 		'Can not call HELO on existing session' =>
-		'Ei voida kutsua HELO-komentoa olemassaolevassa istunnossa.',
+		'HELO-komentoa ei voida kutsua uudestaan olemassaolevassa istunnossa.',
 
 		'Cancel' =>
 		'Peru',
@@ -315,11 +300,32 @@
 		'Children' =>
 		'Alasivut',
 
-		'Collapse all fields' =>
-		'Sulje kaikki kentät',
+		'Clear' =>
+		'Tyhjennä',
+
+		'Clear filter' =>
+		'Poista hakuehto',
+
+		'Clear filters' =>
+		'Poista kaikki hakuehdot',
+
+		'Click to select' =>
+		'Napsauta valitaksesi',
+
+		'Collapse all' =>
+		'Sulje kaikki',
+
+		'Comparison mode' =>
+		'Vertailu',
+
+		'Conditions' =>
+		'Ehdot',
 
 		'Confirm Password' =>
 		'Vahvista salasana',
+
+		'Confirmation' =>
+		'Varmistus',
 
 		'Content' =>
 		'Sisältö',
@@ -328,7 +334,7 @@
 		'Tietolähdettä %s ei löytynyt.',
 
 		'Could not find Email Gateway %s.' =>
-		'Sähköpostiyhdyskäytävää %s ei löytynyt.',
+		'Sähköpostin yhdyskäytävää %s ei löytynyt.',
 
 		'Could not find Event %s.' =>
 		'Tapahtumaa %s ei löytynyt.',
@@ -369,9 +375,6 @@
 		'Create Section' =>
 		'Luo malli',
 
-		'Create Utility' =>
-		'Luo työkalu',
-
 		'Create a new author' =>
 		'Luo uusi käyttäjä',
 
@@ -386,9 +389,6 @@
 
 		'Create a new page' =>
 		'Luo uusi sivu',
-
-		'Create a new utility' =>
-		'Luo uusi työkalu',
 
 		'Create a section' =>
 		'Luo malli',
@@ -408,20 +408,29 @@
 		'Data Source' =>
 		'Tietolähde',
 
+		'Data Source created at %s.' =>
+		'Tietolähde luotu %s.',
+
+		'Data Source updated at %s.' =>
+		'Tietolähde päivitetty %s.',
+
 		'Data Sources' =>
 		'Tietolähteet',
 
 		'Data returned is invalid.' =>
 		'Palautettu data on virheellistä.',
 
-		'Data source created at %s.' =>
-		'Tietolähde luotu %s.',
+		'Data source not executed, forbidden parameter was found.' =>
+		'Tietolähdettä ei suoritettu, kielletty parametri löydettiin.',
+
+		'Data source not executed, required parameter is missing.' =>
+		'Tietolähdettä ei suoritettu, pakollinen parametri puuttuu.',
 
 		'Data source output grouping is not supported by the %s field' =>
 		'Kenttä %s ei tue tulosten ryhmittelyä.',
 
-		'Data source updated at %s.' =>
-		'Tietolähde päivitetty %s.',
+		'DataSource' =>
+		'Tietolähde',
 
 		'Database Error' =>
 		'Tietokantavirhe',
@@ -441,8 +450,14 @@
 		'Default Area' =>
 		'Oletussivu',
 
+		'Default Cache Settings' =>
+		'Välimuistin oletusasetukset',
+
 		'Default Email Settings' =>
 		'Oletussähköpostiasetukset',
+
+		'Default date' =>
+		'Oletuspäivämäärä',
 
 		'Delete' =>
 		'Poista',
@@ -468,9 +483,6 @@
 		'Delete this section' =>
 		'Poista tämä malli',
 
-		'Delete this utility' =>
-		'Poista tämä työkalu',
-
 		'Description' =>
 		'Kuvaus',
 
@@ -484,7 +496,7 @@
 		'Poista sivulta',
 
 		'Developer' =>
-		'Järjestelmävalvoja',
+		'Järjestelmänvalvoja',
 
 		'Disable' =>
 		'Poista käytöstä',
@@ -492,11 +504,23 @@
 		'Disabled' =>
 		'Pois käytöstä',
 
+		'Discuss' =>
+		'Keskustele',
+
+		'Display associations in entries table' =>
+		'Näytä linkit merkintöjä listattaessa',
+
+		'Display in entries table' =>
+		'Näytä merkintöjä listattaessa',
+
+		'Display time' =>
+		'Näytetty aika',
+
+		'Documentation' =>
+		'Dokumentaatio',
+
 		'Dynamic Values' =>
 		'Dynaamiset arvot',
-
-		'Dynamic XML' =>
-		'Dynaaminen XML',
 
 		'E-mail address entered is invalid' =>
 		'Annettu sähköpostiosoite on virheellinen',
@@ -509,15 +533,6 @@
 
 		'Edit' =>
 		'Muokkaa',
-
-		'Edit Page' =>
-		'Muokkaa sivua',
-
-		'Edit Page Configuration' =>
-		'Muokkaa sivun asetuksia',
-
-		'Edit Page Template' =>
-		'Muokkaa sivupohjaa',
 
 		'Edit Section' =>
 		'Muokkaa mallia',
@@ -549,20 +564,20 @@
 		'Email: Sendmail' =>
 		'Sähköposti: Sendmail',
 
-		'Enable to install %s' =>
-		'Kytke päälle asentaaksesi version %s',
+		'Enable' =>
+		'Ota käyttöön',
 
-		'Enable to update to %s' =>
-		'Kytke päälle päivittääksesi versioon %s',
-
-		'Enable/Install' =>
-		'Kytke päälle/asenna',
+		'Enable pagination' =>
+		'Käytä sivutusta',
 
 		'Enabled' =>
 		'Käytössä',
 
 		'Enforced type `%1$s` for argument `$%2$s` does not match any known variable types.' =>
-		'Valvottu tyyppi `%1$s` argumentille `$%2$s` ei vastaa tunnettuja muuttujatyyppejä.',
+		'Tyyppi `%1$s` argumentille `$%2$s` ei vastaa tunnettuja muuttujatyyppejä.',
+
+		'Enter valid XML, exclude XML declaration' =>
+		'Anna oikein muotoiltua XML:ää ilman aloittavaa XML-deklaraatiota.',
 
 		'Enter your email address or username to be sent further instructions for logging in.' =>
 		'Anna sähköpostiosoitteesi tai käyttäjätunnuksesi saadaksesi sähköpostitse ohjeet sisäänkirjautumiseen.',
@@ -570,23 +585,26 @@
 		'Entries' =>
 		'Merkinnät',
 
+		'Entries per Page' =>
+		'Merkintöjä per sivu',
+
 		'Entry [created | edited] successfully.' =>
-		'Merkintä [luotu | muokattu] onnistuneesti.',
+		'Merkintä [luotu | tallennettu].',
 
 		'Entry created at %s.' =>
 		'Merkintä luotu %s.',
 
 		'Entry created successfully.' =>
-		'Merkintä luotu onnistuneesti.',
+		'Merkintä luotu.',
 
 		'Entry edited successfully.' =>
-		'Merkintää muokattu onnistuneesti.',
+		'Merkintä tallennettu.',
 
 		'Entry encountered errors when saving.' =>
 		'Merkintää tallennettaessa tapahtui virhe.',
 
 		'Entry limit specified was not a valid type. String or Integer expected.' =>
-		'Annettu raja-arvo oli virheellinen. Odotettiin merkkijonoa tai kokonaislukua.',
+		'Annettu maksimimäärä on virheellinen. Sen tulee olla merkkijono tai kokonaisluku.',
 
 		'Entry updated at %s.' =>
 		'Merkintä päivitetty %s.',
@@ -595,10 +613,13 @@
 		'Symphonyn lisäosakäsittelijän luonnissa tapahtui virhe.',
 
 		'Error creating field object with id %1$d, for filtering in data source %2$s. Check this field exists.' =>
-		'Kenttäobjektin luomisessa ID:llä %1$d suodatettavaksi tietolähteessä %2$d tapahtui virhe. Tarkista, että kenttä on olemassa.',
+		'Kenttäobjektia tunnuksella %1$d ei voitu luoda tietolähteelle %2$d. Tarkista, että kenttä on olemassa.',
 
 		'Essentials' =>
 		'Perustiedot',
+
+		'Event' =>
+		'Tapahtuma',
 
 		'Event Filters add additional conditions or actions to an event.' =>
 		'Tapahtumasuodattimet määrittävät lisäehtoja tai -toimenpiteitä tapahtumalle.',
@@ -621,8 +642,8 @@
 		'Existing Values' =>
 		'Olemassaolevat arvot',
 
-		'Expand all fields' =>
-		'Avaa kaikki kentät',
+		'Expand all' =>
+		'Avaa kaikki',
 
 		'Extensions' =>
 		'Lisäosat',
@@ -631,16 +652,13 @@
 		'Kohteen %s poistaminen epäonnistui.',
 
 		'Failed to load URL, status code %d was returned.' =>
-		'URL-osoitetta ei voitu ladata, HTTP-tilakoodi %d palautettiin.',
+		'Osoitetta ei voitu hakea, HTTP-koodi %d palautettiin.',
 
 		'Failed to write Data source to disk.' =>
-		'Tietolähdettä ei voitu tallentaa levylle.',
+		'Tietolähdettä ei voitu tallentaa.',
 
 		'Failed to write Event to disk.' =>
-		'Tapahtumaa ei voitu tallentaa levylle.',
-
-		'Failing to paginate may degrade performance if the number of entries returned is very high.' =>
-		'Sivutuksen poiskytkeminen voi hidastaa suoritusta, jos palautettavien merkintöjen määrä on erittäin suuri.',
+		'Tapahtumaa ei voitu tallentaa.',
 
 		'Feb' =>
 		'helmi',
@@ -667,13 +685,37 @@
 		'Kentässä ‘%s’ valitun tiedoston tiedostomuoto ei ole sallittu.',
 
 		'File chosen in ‘%s’ was only partially uploaded due to an error.' =>
-		'Kentässä ‘%s’ valittu tiedosto voitiin virheen takia ladata vain osittain.',
+		'Kentässä ‘%s’ valittu tiedosto voitiin ladata vain osittain virheen takia.',
 
-		'Filter Results' =>
-		'Suodata tulokset',
+		'Filter Entries' =>
+		'Hae merkintöjä',
 
 		'Filters' =>
 		'Suodattimet',
+
+		'Find files that are an exact match for the given string.' =>
+		'Etsi tiedostoja, jotka täsmäävät tarkalleen annettuun lausekkeeseen.',
+
+		'Find files that do not match the given <a href="%s">MySQL regular expressions</a>.' =>
+		'Etsi tiedostoja, jotka eivät täsmää annettuun <a href="%s">MySQL-muotoiseen säännölliseen lausekkeeseen</a>.',
+
+		'Find files that match the given <a href="%s">MySQL regular expressions</a>.' =>
+		'Etsi tiedostoja, jotka täsmäävät annettuun <a href="%s">MySQL-muotoiseen säännölliseen lausekkeeseen</a>.',
+
+		'Find files that match the given mimetype.' =>
+		'Etsi tiedostoja, jotka täsmäävät annettuun MIME-tiedostomuotoon.',
+
+		'Find files that match the given size.' =>
+		'Etsi tiedostoja, jotka täsmäävät annettuun kokoon.',
+
+		'Find values that are an exact match for the given string.' =>
+		'Etsi arvoja, jotka täsmäävät tarkalleen annettuun lausekkeeseen.',
+
+		'Find values that do not match the given <a href="%s">MySQL regular expressions</a>.' =>
+		'Etsi arvoja, jotka eivät täsmää annettuun <a href="%s">MySQL-muotoiseen säännölliseen lausekkeeseen</a>.',
+
+		'Find values that match the given <a href="%s">MySQL regular expressions</a>.' =>
+		'Etsi arvoja, jotka täsmäävät annettuun <a href="%s">MySQL-muotoiseen säännölliseen lausekkeeseen</a>.',
 
 		'First' =>
 		'Ensimmäinen',
@@ -689,6 +731,9 @@
 
 		'Forbidden' =>
 		'Estetty',
+
+		'Forbidden Parameter' =>
+		'Kielletty parametri',
 
 		'Formatting' =>
 		'Muotoilu',
@@ -714,20 +759,35 @@
 		'General' =>
 		'Yleiset',
 
+		'GitHub' =>
+		'GitHub',
+
 		'Go to page …' =>
 		'Mene sivulle …',
 
 		'Group By' =>
 		'Ryhmitä perusteella',
 
+		'Grouping' =>
+		'Ryhmittely',
+
+		'HTML-encode text' =>
+		'HTML-koodaa teksti',
+
 		'Handle' =>
-		'Kahva',
+		'Tunnus',
 
 		'Header fields can only contain strings' =>
 		'Otsakekentät voivat sisältää vain merkkijonoja',
 
 		'Hi %s,' =>
 		'Hei %s,',
+
+		'Hide this section from the back-end menu' =>
+		'Piilota tämä malli hallintapaneelin valikosta',
+
+		'Homepage' =>
+		'Kotisivu',
 
 		'Host' =>
 		'Palvelin',
@@ -736,25 +796,31 @@
 		'ID',
 
 		'If it was provided by an Extension, ensure that it is installed, and enabled.' =>
-		'Jos se oli lisäosan tarjoama, tarkista että se on asennettu ja kytketty päälle.',
+		'Jos tämä oli lisäosan tarjoama, tarkista että lisäosa on asennettu ja kytketty päälle.',
 
 		'Ignore?' =>
 		'Älä muistuta uudelleen.',
 
+		'Include a count of entries in associated sections' =>
+		'Näytä merkintöjen lukumäärä linkitetyissä malleissa',
+
 		'Included Elements' =>
 		'Sisällytetyt elementit',
 
-		'Installed Version' =>
-		'Asennettu versio',
+		'Install' =>
+		'Asenna',
 
 		'Invalid URL' =>
 		'Virheellinen URL-osoite',
 
 		'Invalid element name. Must be valid %s.' =>
-		'Virheellinen elementin nimi. On oltava sallittu %s.',
+		'Virheellinen elementin nimi. On oltava %s.',
 
 		'Invalid timezone %s' =>
 		'Virheellinen aikavyöhyke %s',
+
+		'Issues' =>
+		'Ongelmat',
 
 		'It currently does not work with ‘Allow Multiple’' =>
 		'Ei tällä hetkellä toimi ‘Salli monta’ -valinnan kanssa',
@@ -763,7 +829,7 @@
 		'Tämä vanhenee 2 tunnin kuluttua. Jos et pyytänyt uutta salasanaa, voit jättää tämän viestin huomiotta.',
 
 		'JSON not formatted correctly' =>
-		'JSON muotoiltu virheellisesti',
+		'JSON on virheellisesti muotoiltu',
 
 		'Jan' =>
 		'tammi',
@@ -807,6 +873,18 @@
 		'Leave password fields blank to keep the current password' =>
 		'Jätä salasanakentät tyhjiksi säilyttääksesi nykyisen salasanasi',
 
+		'Leaving these fields empty will always execute the data source.' =>
+		'Näiden kenttien jättäminen tyhjäksi suorittaa tietolähteen aina.',
+
+		'Linked to %s in' =>
+		'Linkitetty kohteessa %s merkintöihin',
+
+		'Links' =>
+		'Linkit',
+
+		'Links in %s' =>
+		'Linkit kohteessa %s',
+
 		'Log out' =>
 		'Kirjaudu ulos',
 
@@ -819,8 +897,14 @@
 		'Main content' =>
 		'Pääsisältö',
 
+		'Make this a required field' =>
+		'Tee tästä pakollinen kenttä',
+
 		'Malformed UTF-8 characters, possibly incorrectly encoded.' =>
-		'Epämuodostuneita UTF-8-merkkejä, mahdollisesti virheellisesti koodattu.',
+		'Epämuodostuneita UTF-8-merkkejä, koodaus on mahdollisesti virheellinen.',
+
+		'Manager' =>
+		'Hallinnoitsija',
 
 		'Mar' =>
 		'maalis',
@@ -829,7 +913,7 @@
 		'maaliskuuta',
 
 		'Maximum stack depth exceeded.' =>
-		'Pinon enimmäissyvyys ylitetty.',
+		'Kutsupinon enimmäissyvyys ylitetty.',
 
 		'May' =>
 		'toukokuuta',
@@ -846,14 +930,8 @@
 		'Monday' =>
 		'maanantai',
 
-		'Must be a valid number' =>
-		'Täytyy olla numero',
-
 		'Must be a valid number or parameter' =>
-		'Täytyy olla numero tai parametri',
-
-		'Must be greater than zero' =>
-		'Täytyy olla suurempi kuin nolla',
+		'On oltava numero tai parametri',
 
 		'Must call EHLO (or HELO) before calling AUTH' =>
 		'EHLO (tai HELO) on kutsuttava ennen AUTH-komennon kutsumista.',
@@ -873,15 +951,6 @@
 		'Name' =>
 		'Nimi',
 
-		'Name is a required field.' =>
-		'Nimi on pakollinen kenttä.',
-
-		'Namespace' =>
-		'Nimiavaruus',
-
-		'Namespace Declarations' =>
-		'Nimiavaruusmäärittelyt',
-
 		'Navigation' =>
 		'Navigaatio',
 
@@ -895,16 +964,16 @@
 		'Uusi salasana',
 
 		'New Symphony Account Password' =>
-		'Uusi Symphony-käyttäjätunnuksen salasana',
-
-		'New version %1$s, Requires Symphony %2$s' =>
-		'Uusi versio %1$s, vaatii Symphony-version %2$s',
+		'Uusi Symphony-tunnuksen salasana',
 
 		'Next &rarr;' =>
 		'Seuraava &rarr;',
 
 		'No' =>
 		'Ei',
+
+		'No Suggestions' =>
+		'Ei ehdotuksia',
 
 		'No attachments or body text was set. Can not send empty email.' =>
 		'Liitetiedostoja tai sisältötekstiä ei ole määritelty. Tyhjää sähköpostiviestiä ei voida lähettää.',
@@ -917,6 +986,12 @@
 
 		'No errors.' =>
 		'Ei virheitä',
+
+		'No filters applied yet.' =>
+		'Ei hakuehtoja.',
+
+		'No links in %s' =>
+		'Ei linkkejä kohteessa %s',
 
 		'No password was entered.' =>
 		'Salasanaa ei annettu.',
@@ -939,11 +1014,11 @@
 		'None found.' =>
 		'Yhtään ei löytynyt.',
 
-		'Not Installed' =>
+		'Not installed' =>
 		'Ei asennettu',
 
-		'Notice that it is possible to get mixtures of success and failure messages when using the ‘Allow Multiple’ option' =>
-		'Huomaa, että on mahdollista saada viestejä sekä onnistuneista että epäonnistuneista tapahtumista, kun ‘Salli monta’ on päällä',
+		'Notice that it is possible to get mixtures of success and failure messages when using the ‘Allow Multiple’ option.' =>
+		'Huomaa, että on mahdollista saada viestejä sekä onnistuneista että epäonnistuneista tapahtumista, kun ‘Salli monta’ on päällä.',
 
 		'Nov' =>
 		'marras',
@@ -975,11 +1050,8 @@
 		'Optional' =>
 		'Valinnainen',
 
-		'Output Options' =>
-		'Tulosteasetukset',
-
-		'Output Parameters' =>
-		'Tulosteparametrit',
+		'Options' =>
+		'Valinnat',
 
 		'Page %1$s of %2$s' =>
 		'Sivu %1$s/%2$s',
@@ -989,6 +1061,9 @@
 
 		'Page Not Found' =>
 		'Sivua ei löytynyt',
+
+		'Page Number' =>
+		'Sivunumero',
 
 		'Page Resources' =>
 		'Sivun resurssit',
@@ -1017,6 +1092,9 @@
 		'Pages' =>
 		'Sivut',
 
+		'Pagination' =>
+		'Sivutus',
+
 		'Parameters' =>
 		'Parametrit',
 
@@ -1041,14 +1119,23 @@
 		'Please check permissions on %s.' =>
 		'Tarkista kansion %s käyttöoikeudet.',
 
+		'Please confirm changes to this author with your password.' =>
+		'Varmistathan muutokset käyttäjään salasanallasi.',
+
 		'Please ensure handle contains at least one Latin-based character.' =>
-		'Tarkista, että kahva sisältää ainakin yhden latinalaisten aakkosten (a-z) kirjaimen.',
+		'Tarkista, että tunnus sisältää ainakin yhden kirjaimen väliltä A-Z.',
 
 		'Please ensure name contains at least one Latin-based character.' =>
-		'Tarkista, että nimessä on ainakin yksi latinalaisten aakkosten (a-z) kirjain.',
+		'Tarkista, että nimi sisältää ainakin yhden kirjaimen väliltä A-Z.',
+
+		'Please go back and try again.' =>
+		'Kokeilethan uudestaan.',
 
 		'Please login to view this page.' =>
 		'Kirjaudu sisään nähdäksesi tämän sivun.',
+
+		'Please provide your own password to make changes to this author.' =>
+		'Annathan oman salasanasi tehdäksesi muutoksia tähän käyttäjään.',
 
 		'Please remove it from your fields prior to uninstalling or disabling.' =>
 		'Poista se kentistäsi ennen lisäosan poistoa.',
@@ -1059,11 +1146,11 @@
 		'Please remove it from your sections prior to uninstalling or disabling.' =>
 		'Poista se malleistasi ennen lisäosan poistoa.',
 
+		'Please reset your password' =>
+		'Nollaathan salasanasi',
+
 		'Port' =>
 		'Portti',
-
-		'Predefined Values' =>
-		'Ennaltamääritetyt arvot',
 
 		'Preferences' =>
 		'Asetukset',
@@ -1071,14 +1158,23 @@
 		'Preferences saved.' =>
 		'Asetukset tallennettu.',
 
+		'Recipient address can not contain carriage return or newlines.' =>
+		'Vastaanottajan osoite ei voi sisältää rivinvaihtoja.',
+
 		'Recipient email address cannot be empty.' =>
 		'Vastaanottajan sähköpostiosoite ei voi olla tyhjä.',
 
 		'Recipient not found' =>
 		'Vastaanottajaa ei löytynyt',
 
-		'Release Date' =>
-		'Julkaisupvm',
+		'Redirect to 404 page when no results are found' =>
+		'Uudelleenohjaa 404-sivulle, jos merkintöjä ei löydy',
+
+		'Redirect to 404 page when the forbidden parameter is present' =>
+		'Uudelleenohjaa 404-sivulle, jos kielletty parametri on asetettu',
+
+		'Redirect to 404 page when the required parameter is not present' =>
+		'Uudelleenohjaa 404-sivulle, jos pakollinen parametri puuttuu',
 
 		'Remove File' =>
 		'Poista tiedosto',
@@ -1095,9 +1191,6 @@
 		'Remove item' =>
 		'Poista',
 
-		'Remove namespace' =>
-		'Poista nimiavaruus',
-
 		'Rename folder' =>
 		'Nimeä hakemisto uudelleen',
 
@@ -1111,13 +1204,13 @@
 		'Vastausnimi ei voi sisältää rivinvaihtoja.',
 
 		'Request timed out. %d second limit reached.' =>
-		'Pyyntö aikakatkaistiin. %d sekunnin raja saavutettu.',
+		'Pyyntö aikakatkaistiin. %d sekunnin raja ylitetty.',
 
-		'Required URL Parameter' =>
-		'Vaadittu osoiteparametri',
+		'Request was rejected for having an invalid cross-site request forgery token.' =>
+		'Pyyntöä ei käsitelty puuttuvan CSRF-tunnisteen takia.',
 
-		'Requires Symphony %s' =>
-		'Vaatii Symphony-version %s',
+		'Required Parameter' =>
+		'Pakollinen parametri',
 
 		'Retrieve password?' =>
 		'Unohditko salasanasi?',
@@ -1137,6 +1230,9 @@
 		'Save Changes' =>
 		'Tallenna muutokset',
 
+		'Search for {$item}' =>
+		'Hakutulokset sanalle {$item}',
+
 		'Section created at %s.' =>
 		'Malli luotu %s.',
 
@@ -1149,8 +1245,29 @@
 		'Sections Index' =>
 		'Mallit',
 
+		'Select ' =>
+		'Valitse ',
+
+		'Select %s Extension' =>
+		'Valitse lisäosa %d',
+
+		'Select Author %s' =>
+		'Valitse käyttäjä %d',
+
 		'Select Box' =>
 		'Valintalaatikko',
+
+		'Select Entry %d' =>
+		'Valitse merkintä %d',
+
+		'Select Page %s' =>
+		'Valitse sivu %s',
+
+		'Select Section %s' =>
+		'Valitse malli %s',
+
+		'Select current user by default' =>
+		'Valitse oletuksena nykyinen käyttäjä',
 
 		'Send Email' =>
 		'Lähetä sähköposti',
@@ -1185,6 +1302,12 @@
 		'Settings for field %s could not be found in table tbl_fields_%s.' =>
 		'Asetuksia kentälle %s ei löytynyt taulukosta tbs_fields_%s.',
 
+		'Show Associations' =>
+		'Näytä linkitetyt merkinnät',
+
+		'Show calendar' =>
+		'Näytä kalenteri',
+
 		'Show debug view' =>
 		'Näytä vianjäljitysnäkymä',
 
@@ -1193,6 +1316,9 @@
 
 		'Show line %d in debug view' =>
 		'Näytä rivi %d vianjäljitysnäkymässä',
+
+		'Show more entries' =>
+		'Näytä lisää merkintöjä',
 
 		'Sidebar' =>
 		'Sivupalkki',
@@ -1212,20 +1338,29 @@
 		'Sort Order' =>
 		'Järjestyssuunta',
 
+		'Sort all options alphabetically' =>
+		'Järjestä valinnat aakkosjärjestyksessä',
+
 		'Sort by %1$s %2$s' =>
 		'Järjestä perusteella %1$s %2$s',
 
-		'Sorting and Limiting' =>
-		'Järjestäminen ja sivuttaminen',
+		'Sorting' =>
+		'Järjestäminen',
 
 		'Source' =>
 		'Lähde',
+
+		'Static Values' =>
+		'Staattiset arvot',
 
 		'Static XML' =>
 		'Staattinen XML',
 
 		'Status' =>
 		'Tila',
+
+		'Status unavailable' =>
+		'Tuntematon tila',
 
 		'Submit' =>
 		'Lähetä',
@@ -1252,7 +1387,7 @@
 		'Virhe: Symphony-lisäosa puuttuu',
 
 		'Syntax error, malformed JSON.' =>
-		'Syntaksivirhe, virheellinen JSON.',
+		'Syntaksivirhe, annettu JSON on virheellinen.',
 
 		'System' =>
 		'Järjestelmä',
@@ -1272,9 +1407,6 @@
 		'System Modification Date' =>
 		'Järjestelmän muokkauspäivämäärä',
 
-		'System Modified Date' =>
-		'Järjestelmän muokkauspäivämäärä',
-
 		'TLS encryption' =>
 		'TLS-salaus',
 
@@ -1283,6 +1415,9 @@
 
 		'Take me to the login page' =>
 		'Avaa sisäänkirjautumissivu',
+
+		'Target' =>
+		'Kohde',
 
 		'Template' =>
 		'Pohja',
@@ -1326,26 +1461,41 @@
 		'The Symphony Team' =>
 		'Symphony-tiimi',
 
-		'The Symphony configuration file, %s, is not writable. You will not be able to save changes to preferences.' =>
+		'The Symphony calendar widget has been disabled because your system date format is currently not supported. Try one of the following instead or disable the calendar in the field settings:' =>
+		'Symphonyn kalenterikenttä on poistettu käytöstä, koska järjestelmäsi päivämäärän muotoa ei tueta. Kokeile jotain seuraavista tai poista kalenteri käytöstä kentän asetuksissa:',
+
+		'The Symphony configuration file, %s, is not writable. The sort order cannot be modified.' =>
+		'Symphonyn asetustiedostoon %s ei voi kirjoittaa. Järjestystä ei voi muuttaa.',
+
+		'The Symphony configuration file, %s, or folder is not writable. You will not be able to save changes to preferences.' =>
 		'Symphonyn asetustiedostoon %s ei voi kirjoittaa. Et voi tallentaa muutoksia asetuksiin.',
 
 		'The Text Formatter ‘%s’, provided by the Extension ‘%s’, is currently in use.' =>
 		'Tekstimuotoilija ‘%s’, joka on lisäosan ‘%s’ tuottama, on käytössä.',
 
 		'The author profile you requested does not exist.' =>
-		'Pyytämääsi käyttäjäprofiilia ei ole olemassa.',
+		'Hakemaasi tunnusta ei ole olemassa.',
+
+		'The content of the file `%s` could not be loaded.' =>
+		'Tiedoston `%s` sisältöä ei voitu lukea.',
+
+		'The data will only be available on the selected pages.' =>
+		'Data on saatavilla vain valituilla sivuilla.',
 
 		'The date specified in ‘%s’ is invalid.' =>
 		'Päivämäärä kohteessa ‘%s’ on virheellinen.',
 
 		'The destination directory is not writable.' =>
-		'Päätehakemistoon ei voi kirjoittaa.',
+		'Kohdehakemistoon ei voi kirjoittaa.',
 
 		'The destination directory, %s, does not exist.' =>
 		'Kohdehakemistoa %s ei ole olemassa.',
 
 		'The email address ‘%s’ is invalid.' =>
 		'Sähköpostiosoite ‘%s’ on virheellinen.',
+
+		'The event will only be available on the selected pages.' =>
+		'Tapahtuma on saatavilla vain valituilla sivuilla.',
 
 		'The field ‘%s’, provided by the Extension ‘%s’, is currently in use.' =>
 		'Kenttä ‘%s’, joka on lisäosan ‘%s’ tuottama, on käytössä.',
@@ -1357,7 +1507,7 @@
 		'Ladattua tiedostoa ei ole enää saatavilla. Tarkista, että se on olemassa ja luettavissa.',
 
 		'The following are the recognised fields:' =>
-		'Seuraavat ovat tunnistetut kentät:',
+		'Seuraavat kentät tunnistetaan:',
 
 		'The following error was returned:' =>
 		'Seuraava virhe palautettiin:',
@@ -1380,6 +1530,9 @@
 		'There is already a field of type %s. There can only be one per section.' =>
 		'%s-tyyppinen kenttä on jo olemassa. Niitä voi olla mallissa vain yksi.',
 
+		'There was a problem rendering this page. Please check the activity log for more details.' =>
+		'Sivua ei voitu näyttää. Tarkistathan lisätiedot tapahtumalokista.',
+
 		'There was a problem whilst attempting to establish a database connection. Please check all connection information is correct.' =>
 		'Tietokantaan yhdistäminen epäonnistui. Tarkista, että tietokanta-asetukset ovat oikein.',
 
@@ -1387,7 +1540,10 @@
 		'Tiedoston %1$s lataamisessa kohdehakemistoon %1$s tapahtui virhe.',
 
 		'There were some problems while attempting to save. Please check below for problem fields.' =>
-		'Tallentamisessa oli joitakin ongelmia. Tarkista alla olevat ongelmakentät.',
+		'Tallennus epäonnistui, tarkistahan alla olevat ongelmakohdat.',
+
+		'This Symphony instance has not been set up for emailing, %s' =>
+		'Symphonya ei ole vielä määritetty sähköpostien lähettämiseen, %s',
 
 		'This document is not well formed.' =>
 		'Dokumentti ei ole hyvin muotoiltu.',
@@ -1396,10 +1552,10 @@
 		'Seuraava virhe tapahtui 404-sivua selvitettäessä alkuperäistä pyyntöä varten.',
 
 		'This event has been customised and cannot be viewed from Symphony.' =>
-		'Tätä tapahtumaa on mukautettu, joten sitä ei voi avata Symphonyn kautta.',
+		'Tätä tapahtumaa on muokattu käsin; sitä ei voi muokata Symphonyn kautta.',
 
 		'This gateway can not be found. Can not save as default.' =>
-		'Tätä yhdyskäytävää ei voitu löytää, joten sitä ei voi tallentaa oletukseksi.',
+		'Tätä yhdyskäytävää ei löytynyt, joten sitä ei voi tallentaa oletukseksi.',
 
 		'This is a required field' =>
 		'Tämä on pakollinen kenttä',
@@ -1413,17 +1569,17 @@
 		'This page could not be rendered due to the following XSLT processing errors:' =>
 		'Tätä sivua ei voitu näyttää seuraavien XSLT-prosessointivirheiden vuoksi:',
 
+		'This request exceeds the maximum allowed request size of %s specified by your host.' =>
+		'Tämä pyyntö ylittää palvelimen asettaman pyynnön maksimikoon %s.',
+
 		'Thu' =>
 		'to',
 
 		'Thursday' =>
 		'torstai',
 
-		'Title' =>
-		'Otsikko',
-
 		'To edit an existing entry, include the entry ID value of the entry in the form. This is best as a hidden field like so:' =>
-		'Muokataksesi olemassaolevaa merkintää, sisällytä merkinnän ID lomakkeeseen. Tämän voi tehdä parhaiten piilotetulla kentällä, kuten tässä:',
+		'Muokataksesi olemassaolevaa merkintää, sisällytä merkinnän ID lomakkeeseen. Tämän voi tehdä parhaiten piilotetulla kentällä:',
 
 		'To redirect to a different location upon a successful save, include the redirect location in the form. This is best as a hidden field like so, where the value is the URL to redirect to:' =>
 		'Uudelleenohjataksesi toiseen osoitteeseen onnistuneen tallennuksen jälkeen, lisää uudelleenohjausosoite lomakkeeseen. Tämän voi tehdä parhaiten piilotetulla kentällä, kuten tässä esimerkissä, jossa arvo on URL-osoite johon uudelleenohjataan:',
@@ -1440,38 +1596,35 @@
 		'Type' =>
 		'Tyyppi',
 
-		'URI' =>
-		'URI',
+		'Type and hit enter to apply filter…' =>
+		'Kirjoita ja paina Enter asettaaksesi suodattimen…',
+
+		'Type to search' =>
+		'Kirjoita etsiäksesi',
 
 		'URL' =>
 		'URL',
-
-		'URL Handle' =>
-		'URL-kahva',
-
-		'URL Parameters' =>
-		'URL-parametrit',
 
 		'Unable to connect via TLS' =>
 		'Ei voitu yhdistää käyttäen TLS:ää.',
 
 		'Unable to create path - %s' =>
-		'Kansiopolkua ei voitu luoda - %s',
+		'Polkua ei voitu luoda: %s',
 
 		'Unable to find a Manager class for this resource.' =>
 		'Käsittelijäluokkaa ei löytynyt tälle resurssille.',
 
 		'Unable to open socket. %s' =>
-		'Yhteyttä ei voitu avata. %s',
+		'Yhteyttä ei voitu avata: %s',
 
 		'Unable to open socket. Unknown error' =>
-		'Yhteyttä ei voitu avata. Tuntematon virhe',
+		'Yhteyttä ei voitu avata. Tuntematon virhe.',
 
 		'Unable to remove - %s' =>
-		'Kohdetta ei voitu poistaa - %s',
+		'Kohdetta ei voitu poistaa: %s',
 
 		'Unable to remove file - %s' =>
-		'Tiedostoa ei voitu poistaa - %s',
+		'Tiedostoa ei voitu poistaa: %s',
 
 		'Unable to set timeout.' =>
 		'Aikakatkaisua ei voitu määrittää.',
@@ -1513,10 +1666,10 @@
 		'Tuntematon malli',
 
 		'Unknown errors occurred while attempting to save.' =>
-		'Tuntemattomia virheitä tapahtui tallennettaessa.',
+		'Tallennettaessa tapahtui virheitä.',
 
 		'Unknown errors where encountered when saving.' =>
-		'Tuntemattomia virheitä tapahtui tallennettaessa.',
+		'Tallennettaessa tapahtui virheitä.',
 
 		'Unsupported SSL type' =>
 		'SSL-tyyppiä ei tueta',
@@ -1527,8 +1680,11 @@
 		'Untitled Field' =>
 		'Nimetön kenttä',
 
-		'Update cached result every %s minutes' =>
-		'Päivitä välimuistissa oleva tulos %s minuutin välein',
+		'Update' =>
+		'Päivitä',
+
+		'Update available' =>
+		'Päivitys saatavilla',
 
 		'Uploading ‘%s’ failed. Could not write temporary file to disk.' =>
 		'Tiedoston ‘%s’ lataaminen epäonnistui. Väliaikaista tiedostoa ei voitu kirjoittaa.',
@@ -1539,20 +1695,14 @@
 		'Upon the event successfully saving the entry, this option takes input from the form and send an email to the desired recipient.' =>
 		'Onnistuneen tallennuksen jälkeen tämä valinta lähettää lomakkeen tiedot sähköpostissa halutulle vastaanottajalle.',
 
-		'Use %s syntax to filter by page parameters.' =>
-		'Käytä %s-syntaksia järjestääksesi sivuparametrien mukaan.',
+		'Use %s syntax to filter by page parameters. A default value can be set using %s.' =>
+		'Käytä %s-syntaksia suodattaaksesi sivuparametrien mukaan. Voit asettaa oletusarvon syntaksilla %s.',
 
 		'Use %s syntax to limit by page parameters.' =>
 		'Käytä %s-syntaksia sivuttaaksesi sivuparametrien mukaan.',
 
-		'Use %s syntax to specify dynamic portions of the URL.' =>
-		'Käytä %s-syntaksia määrittääksesi URL-osoitteen dynaamiset osat.',
-
-		'Use Fields' =>
-		'Käytä kenttiä',
-
-		'Use an XPath expression to select which elements from the source XML to include.' =>
-		'Käytä XPath-lauseketta valitaksesi sisällytettävät lähde-XML:n elementit.',
+		'Use %s syntax to order by page parameters.' =>
+		'Käytä %s-syntaksia järjestääksesi sivuparametrien mukaan.',
 
 		'User Type' =>
 		'Käyttäjän tyyppi',
@@ -1566,23 +1716,14 @@
 		'Username is required' =>
 		'Käyttäjätunnus on pakollinen',
 
-		'Utilities' =>
-		'Työkalut',
-
 		'Utility' =>
 		'Työkalu',
 
-		'Utility could not be written to disk.' =>
-		'Työkalua ei voitu kirjoittaa levylle.',
-
-		'Utility created at %s.' =>
-		'Työkalu luotu %s.',
-
-		'Utility updated at %s.' =>
-		'Työkalu päivitetty %s.',
-
 		'Validation Rule' =>
-		'Säännöllinen lauseke validointia varten',
+		'Säännöllinen lauseke tarkistusta varten',
+
+		'Validation rule is not a valid regular expression' =>
+		'Säännöllinen lauseke on väärin muotoiltu',
 
 		'Value' =>
 		'Arvo',
@@ -1600,12 +1741,12 @@
 		'Näytä sivu käyttöliittymässä',
 
 		'View Section Entries' =>
-		'Näytä mallista johdetut merkinnät',
+		'Näytä mallin merkinnät',
 
 		'View all Authors' =>
 		'Näytä kaikki käyttäjät',
 
-		'View all Data sources' =>
+		'View all Data Sources' =>
 		'Näytä kaikki tietolähteet',
 
 		'View all Entries' =>
@@ -1619,9 +1760,6 @@
 
 		'View all Sections' =>
 		'Näytä kaikki mallit',
-
-		'View all Utilities' =>
-		'Näytä kaikki työkalut',
 
 		'View extensions' =>
 		'Näytä lisäosat',
@@ -1638,23 +1776,26 @@
 		'Wednesday' =>
 		'keskiviikko',
 
-		'When an error occurs during saving, due to either missing or invalid fields, the following XML will be returned' =>
-		'Seuraava XML-merkintä palautetaan, jos tallennettaessa tapahtuu virhe joko puuttuvien tai virheellisten kenttien takia',
+		'When an error occurs during saving, due to either missing or invalid fields, the following XML will be returned.' =>
+		'Seuraava XML palautetaan, jos tallennettaessa tapahtuu virheitä puuttuvien tai virheellisten kenttien takia.',
 
 		'When saved successfully, the following XML will be returned:' =>
-		'Seuraava XML-merkintä palautetaan, kun tallennus onnistui:',
+		'Seuraava XML-merkintä palautetaan, jos tallennus onnistui:',
+
+		'Wiki' =>
+		'Wiki',
 
 		'With Selected...' =>
 		'Muokkaa valittuja...',
+
+		'Wrong password, please enter your own password to make changes to this author.' =>
+		'Väärä salasana, annathan oman salasanasi tehdäksesi muutoksia tähän käyttäjään.',
 
 		'Wrong password. Enter old one to change email address.' =>
 		'Väärä salasana. Anna vanha salasana muuttaaksesi sähköpostiosoitteen.',
 
 		'Wrong password. Enter old password to change it.' =>
 		'Väärä salasana. Anna vanha salasana muuttaaksesi sen.',
-
-		'XML Output' =>
-		'XML-tuloste',
 
 		'XML is invalid.' =>
 		'XML on virheellistä.',
@@ -1672,10 +1813,13 @@
 		'Sinulla ei ole oikeuksia muokata muita kirjoittajia.',
 
 		'You can try uninstalling the extension to continue, or you might want to ask on the forums' =>
-		'Voit yrittää poistaa lisäosan jatkaaksesi tai voit kysyä apua foorumeilta',
+		'Voit yrittää poistaa lisäosan jatkaaksesi tai kysyä apua foorumeilta',
 
 		'You cannot remove yourself as you are the active Author.' =>
 		'Et voi poistaa itseäsi, koska olet aktiivinen käyttäjä.',
+
+		'Your Password' =>
+		'Sinun salasanasi',
 
 		'Your Symphony installation is up to date, but the installer was still detected. For security reasons, it should be removed.' =>
 		'Symphony on ajan tasalla, mutta asennusohjelma löydettiin. Turvallisuussyistä se pitäisi poistaa.',
@@ -1695,8 +1839,8 @@
 		'ascending' =>
 		'nouseva',
 
-		'available when using Dynamic Values' =>
-		'saatavilla käytettäessä dynaamisia arvoja',
+		'at' =>
+		'klo',
 
 		'day' =>
 		'päivä',
@@ -1707,6 +1851,9 @@
 		'descending' =>
 		'laskeva',
 
+		'drag to reorder' =>
+		'raahaa järjestääksesi uudelleen',
+
 		'eighth' =>
 		'kahdeksas',
 
@@ -1715,6 +1862,9 @@
 
 		'fifth' =>
 		'viides',
+
+		'filtered' =>
+		'suodatettu',
 
 		'first' =>
 		'ensimmäinen',
@@ -1773,17 +1923,29 @@
 		'ninth' =>
 		'yhdeksäs',
 
+		'no leading zero' =>
+		'ilman aloittavaa nollaa',
+
 		'no leading zeros' =>
 		'ei edeltäviä nollia',
 
 		'now' =>
 		'nyt',
 
+		'optional, accepts absolute or relative dates' =>
+		'valinnainen, hyväksyy absoluuttiset tai relatiiviset päivämäärät',
+
 		'previous' =>
 		'edellinen',
 
-		'random' =>
-		'satunnainen',
+		'read only' =>
+		'vain luettavissa',
+
+		'required' =>
+		'pakollinen',
+
+		'requires Symphony %s' =>
+		'vaatii Symphonyn %s',
 
 		'sec' =>
 		's',
@@ -1821,7 +1983,7 @@
 		'twelfth' =>
 		'kahdestoista',
 
-		'unnamed' =>
+		'untitled' =>
 		'nimetön',
 
 		'week' =>
@@ -1848,6 +2010,9 @@
 		'{$minutes} minutes ago' =>
 		'{$minutes} minuuttia sitten',
 
+		'{$param}' =>
+		'{$parametri}',
+
 		'‘%s’ contains invalid XML.' =>
 		'‘%s’ sisältää virheellistä XML:ää.',
 
@@ -1856,30 +2021,6 @@
 
 		'‘%s’ is a required field.' =>
 		'‘%s’ on pakollinen kenttä.',
-
-		'at' =>
-		'klo',
-
-		'Linked to %s in' =>
-		'Linkitetty kohteessa %s merkintöihin',
-
-		'Links in %s' =>
-		'Linkit kohteessa %s',
-
-		'%d entries' =>
-		'%d merkintää',
-
-		'Show more entries' =>
-		'Näytä lisää merkintöjä',
-
-		'No links in %s' =>
-		'Ei linkkejä kohteessa %s',
-
-		'Show Associations' =>
-		'Näytä linkitetyt merkinnät',
-
-		'Manager' =>
-		'Hallinnoitsija'
 
 	);
 
